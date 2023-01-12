@@ -16,6 +16,11 @@ $f3 = Base::instance();
 // define a default route ("home page for hello project")
 $f3->route('GET /', function() {
     echo '<h1>Hello, Fat Free!</h1>';
+    include 'test.php';
+});
+$f3->route('GET /index.php', function() {
+    echo '<h1>Hello, Fat Free!</h1>';
+    include 'test.php';
 });
 
 // Run Fat-Free
